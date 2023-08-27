@@ -1,0 +1,7 @@
+apiVersion: apps.ctf8s.com/v1alpha1
+kind: Klone
+metadata:
+  name: nestlab3
+spec:
+  name: nestlab3
+  url: https://github.com/adamlahbib/nestlab3

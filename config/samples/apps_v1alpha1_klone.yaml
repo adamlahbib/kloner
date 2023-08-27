@@ -1,0 +1,12 @@
+apiVersion: apps.ctf8s.com/v1alpha1
+kind: Klone
+metadata:
+  labels:
+    app.kubernetes.io/name: klone
+    app.kubernetes.io/instance: klone-sample
+    app.kubernetes.io/part-of: kloner
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: kloner
+  name: klone-sample
+spec:
+  # TODO(user): Add fields here

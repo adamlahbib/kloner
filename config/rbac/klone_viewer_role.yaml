@@ -1,0 +1,27 @@
+# permissions for end users to view klones.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: klone-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: kloner
+    app.kubernetes.io/part-of: kloner
+    app.kubernetes.io/managed-by: kustomize
+  name: klone-viewer-role
+rules:
+- apiGroups:
+  - apps.ctf8s.com
+  resources:
+  - klones
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - apps.ctf8s.com
+  resources:
+  - klones/status
+  verbs:
+  - get

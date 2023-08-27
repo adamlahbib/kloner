@@ -1,0 +1,7 @@
+apiVersion: apps.ctf8s.com/v1alpha1
+kind: Klone
+metadata:
+  name: kli8nt
+spec:
+  name: kli8nt
+  url: https://github.com/kli8nt/front
